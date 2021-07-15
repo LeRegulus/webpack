@@ -1,0 +1,17 @@
+<div class="row center">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4">
+        {{ form_start(form, {attr: {id: 'form'}})}}
+            {{form_row(form.firstname, {attr: {class: 'form-control'} })}}
+            {{form_row(form.lastname, {attr: {class: 'form-control'} })}}
+            {{form_row(form.address, {attr: {class: 'form-control'} })}}
+            {{form_row(form.age, {attr: {class: 'form-control'} })}}
+            {{form_row(form.photo, {attr: {class: 'form-control'} })}}
+            {{form_row(form.email, {attr: {class: 'form-control'} })}}
+            {{form_row(form.password, {attr: {class: 'form-control'} })}}
+            {{form_row(form.verifiedPassword, {attr: {class: 'form-control'} })}}
+            <br><button class="btn btn-primary" type="submit">{{ button_label|default('Enregister') }}</button>
+        {{form_widget(form)}}
+        {{ form_end(form) }}
+    </div>
+</div>
